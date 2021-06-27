@@ -2,7 +2,7 @@
   "name": "webbookmark",
   "version": "0.0.0",
   "scripts": {
-    "dev": "vite",
+    "dev": "cross-env NODE_ENV=development vite",
     "build": "vue-tsc --noEmit && vite build",
     "serve": "vite preview"
   },
@@ -15,6 +15,7 @@
     "@types/node": "^15.12.4",
     "@vitejs/plugin-vue": "^1.2.3",
     "@vue/compiler-sfc": "^3.0.5",
+    "cross-env": "^7.0.3",
     "sass": "^1.35.1",
     "typescript": "^4.3.2",
     "vite": "^2.3.8",

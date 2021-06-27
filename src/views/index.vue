@@ -1,18 +1,23 @@
+<!-- explain -->
 <template>
-  <RouterView />
+  <Background />
 </template>
-
 <script lang="ts">
 import { defineComponent } from 'vue';
-import { RouterView } from 'vue-router';
+import Background from '@/template/Background.vue';
 
 export default defineComponent({
-  name: 'App',
+  name: "Index",
   components: {
-    RouterView,
-  }
+    Background,
+  },
 })
+
+
 </script>
 
-<style lang="scss" scoped>
+
+
+
+<style scoped>
 </style>
