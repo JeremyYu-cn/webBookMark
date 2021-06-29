@@ -1,4 +1,4 @@
-<!-- explain -->
+<!-- 展示页 -->
 <template>
   <Background />
 </template>
@@ -15,9 +15,6 @@ export default defineComponent({
 
 
 </script>
-
-
-
 
 <style scoped>
 </style>
