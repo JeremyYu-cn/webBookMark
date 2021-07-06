@@ -1,6 +1,6 @@
 <!-- explain -->
 <template>
-  <img :src="src" />
+  <img :src="src" :style="style" alt />
 </template>
 <script lang="ts">
 import { defineComponent } from 'vue';
@@ -12,6 +12,10 @@ export default defineComponent({
     src: {
       type: String,
       default: "",
+    },
+    style: {
+      type: Object,
+      default: {},
     }
   }
 })

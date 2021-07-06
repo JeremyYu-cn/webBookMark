@@ -2,12 +2,18 @@
 <template>
   <div>
     <MyImage v-if="src" class="background" :src="src" />
-    <div v-else class="background_color" :style="{ background: bgColor }" />
+    <div v-else class="background_color" :style="{ background: bgColor, ...BgStyle }" />
+    <Setting />
   </div>
 </template>
 <script lang="ts">
-import { defineComponent } from 'vue';
+import { defineComponent, } from 'vue';
 import MyImage from '@/components/MyImage.vue';
+import Setting from '@/components/setting.vue';
+
+const BgStyle = {
+  filter: 'blur(2px)',
+}
 
 export default defineComponent({
   name: "Background",
@@ -23,7 +29,13 @@ export default defineComponent({
   },
   components: {
     MyImage,
-  }
+    Setting
+  },
+  setup() {
+    return {
+      BgStyle,
+    }
+  },
 })
 
 </script>
