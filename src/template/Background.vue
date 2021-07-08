@@ -2,42 +2,45 @@
 <template>
   <div>
     <MyImage v-if="src" class="background" :src="src" />
-    <div v-else class="background_color" :style="{ background: bgColor, ...BgStyle }" />
+    <div
+      v-else
+      class="background_color"
+      :style="{ background: bgColor, ...BgStyle }"
+    />
     <Setting />
   </div>
 </template>
 <script lang="ts">
-import { defineComponent, } from 'vue';
-import MyImage from '@/components/MyImage.vue';
-import Setting from '@/components/setting.vue';
+import { defineComponent } from "vue";
+import MyImage from "@/components/MyImage.vue";
+import Setting from "@/components/setting.vue";
 
 const BgStyle = {
-  filter: 'blur(2px)',
-}
+  filter: "blur(2px)",
+};
 
 export default defineComponent({
   name: "Background",
   props: {
     src: {
       type: String,
-      default: '',
+      default: "",
     },
     bgColor: {
       type: String,
-      default: 'purple',
-    }
+      default: "#fff",
+    },
   },
   components: {
     MyImage,
-    Setting
+    Setting,
   },
   setup() {
     return {
       BgStyle,
-    }
+    };
   },
-})
-
+});
 </script>
 
 <style lang="scss" scoped>
