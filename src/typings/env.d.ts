@@ -1,1 +1,3 @@
-interface ImportMetaEnv {}
+interface ImportMetaEnv {
+  TEST_AAAAA: string;
+}

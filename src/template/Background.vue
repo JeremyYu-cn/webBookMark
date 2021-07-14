@@ -28,7 +28,7 @@ export default defineComponent({
     },
     bgColor: {
       type: String,
-      default: "#fff",
+      default: "rgba(255, 255, 255, 0.2)",
     },
   },
   components: {

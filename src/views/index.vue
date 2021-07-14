@@ -14,6 +14,7 @@ export default defineComponent({
     Background,
     Container,
   },
+  setup() {},
 });
 </script>
 
