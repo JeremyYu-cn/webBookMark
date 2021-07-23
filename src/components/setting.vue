@@ -1,20 +1,13 @@
 <!-- explain -->
 <template></template>
 <script lang="ts">
-import { defineComponent } from 'vue';
-
+import { defineComponent } from "vue";
 
 export default defineComponent({
   name: "Setting",
-  props: {
-
-  },
-  setup() {
-
-  },
-})
-
-
+  props: {},
+  setup() {},
+});
 </script>
 
 <style scoped>

@@ -1,0 +1,29 @@
+html,
+body,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li,
+ol,
+dl,
+dd,
+section,
+p {
+  padding: 0;
+  margin: 0;
+}
+html,
+body {
+  min-width: 1000px;
+  height: 100vh;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+li {
+  list-style-type: none;
+}

@@ -1,13 +1,33 @@
-import { createRouter, createWebHashHistory, RouterOptions } from "vue-router";
-import Index from "@/views/index.vue";
+import {
+  createRouter,
+  createWebHashHistory,
+  RouterOptions,
+  RouterView,
+} from 'vue-router';
+import Index from '@/views/index.vue';
+import BookMark from '@/views/bookmark.vue';
 
 const routerOption: RouterOptions = {
   history: createWebHashHistory(),
   routes: [
     {
-      name: "index",
-      path: "/",
+      name: 'index',
+      path: '/',
       component: Index,
+      children: [
+        {
+          name: 'bookmark',
+          path: '/bookmark',
+          component: RouterView,
+          children: [
+            {
+              name: 'bookmark_detail',
+              path: ':key',
+              component: BookMark,
+            },
+          ],
+        },
+      ],
     },
   ],
 };
