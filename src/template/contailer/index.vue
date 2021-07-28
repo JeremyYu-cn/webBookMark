@@ -15,15 +15,18 @@
 import { defineComponent, ref, Ref } from "vue";
 import { RouterView } from "vue-router";
 import VerticalList, { IList } from "@/components/verticalList.vue";
+import { FONT_COLOR } from "@/assets/data/color";
 
 const tmpList: IList[] = [
   {
     key: "main",
     title: "学习",
+    select_color: FONT_COLOR[0],
   },
   {
     key: "private",
     title: "其他",
+    select_color: FONT_COLOR[1],
   },
 ];
 
@@ -52,6 +55,7 @@ export default defineComponent<{}, {}, {}>({
       listIndex,
       list: tmpList,
       handleListClick: (e: IListClickParam) => handleListClick(e, listIndex),
+      fontColor: FONT_COLOR,
     };
   },
 });
