@@ -14,11 +14,13 @@ const routerOption: RouterOptions = {
       name: 'index',
       path: '/',
       component: Index,
+      redirect: { path: '/bookmark/index' },
       children: [
         {
           name: 'bookmark',
           path: '/bookmark',
           component: RouterView,
+          redirect: { path: '/bookmark/index' },
           children: [
             {
               name: 'bookmark_detail',
