@@ -225,6 +225,13 @@ chainsaw@~0.1.0:
   dependencies:
     traverse ">=0.3.0 <0.4"
 
+check-code-js@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/check-code-js/-/check-code-js-1.0.2.tgz#430c08b5cd3b9c06ffcf03f7ba806071de3d773f"
+  integrity sha512-qD5FlVvtYIjaACauFJY/xHRBLeWYigED9GHCQN8cvvUFLIGp2Xa/Go9+QmJBhGDZRlrc+Mtc9dI9Eh/zvK/t7Q==
+  dependencies:
+    vue "^2.6.14"
+
 "chokidar@>=3.0.0 <4.0.0":
   version "3.5.2"
   resolved "https://registry.nlark.com/chokidar/download/chokidar-3.5.2.tgz#dba3976fcadb016f66fd365021d91600d01c1e75"
@@ -826,6 +833,11 @@ vue-tsc@^0.0.24:
   integrity sha1-DNkNtnn1PqFpQlS4Zj/bPWJKCHI=
   dependencies:
     unzipper "0.10.11"
+
+vue@^2.6.14:
+  version "2.6.14"
+  resolved "https://registry.yarnpkg.com/vue/-/vue-2.6.14.tgz#e51aa5250250d569a3fbad3a8a5a687d6036e235"
+  integrity sha512-x2284lgYvjOMj3Za7kqzRcUSxBboHqtgRE2zlos1qWaOye5yUmHn42LB1250NJBLRwEcdrB0JRwyPTEPhfQjiQ==
 
 vue@^3.0.5:
   version "3.1.2"
